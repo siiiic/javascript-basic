@@ -1,5 +1,5 @@
 const language = `jp`; 
-switch(language) {
+switch(language.toLowerCase()) {
     case 'en': 
         console.log('Hello');
     break;
