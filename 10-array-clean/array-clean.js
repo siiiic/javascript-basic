@@ -10,11 +10,7 @@ function filter (array, fn) {
     return filteredArray;
 }
 
-function canDelete (value) {
-    if (value === String(value) || value % 2 === 0) {
-        return true;
-    }
-    return false;
-}
+const canDelete = (value) => value === String(value) || value % 2;
+
 
 console.log(filter(arr, canDelete));
