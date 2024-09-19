@@ -32,12 +32,7 @@ function checkLuna (cardNumber) {
     cardNumber = cardNumber.replaceAll('-', '')
     for (const i in cardNumber) {
         let digit = Number(cardNumber[i]);
-        if(i % 2 === 0){
-            digit *= 2;
-            if (digit > 9) {
-                digit -= 9;
-            }
-        }
+        digit * 2 > 9 ? digit * 2 - 9 : digit * 2;
         sum += digit;
     }
     return sum % 10 === 0;
