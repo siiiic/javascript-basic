@@ -3,12 +3,5 @@ const queryObject = {
     take: ''
 };
 
-function queryObjectToString (queryObject) {
-    let queryArray = [];
-    for (const [key, value] of Object.entries(queryObject)) {
-        queryArray.push(`${key}=${value}`); 
-    }
-    return queryArray.join('&')
-}
-
-console.log(queryObjectToString(queryObject));
+const queryToString = (url, params) => `${url}/?${Object.entries(params).map(x => x.join('=')).join('&')}`
+console.log(queryToString(queryObject ));
