@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Калькулятор</title>
+  </head>
+  <body>
+    <div class="calc">
+      <div class="input__list">
+        <input type="number" class="input_1" placeholder="Введите число" />
+        <input type="number" class="input_2" />
+      </div>
+      <div class="button__list" onclick="clickEvent(event)">
+        <button class="button">&plus;</button
+        ><button class="button">&minus;</button
+        ><button class="button">&divide;</button
+        ><button class="button">&times;</button>
+      </div>
+      <div class="result">Здесь будет результат</div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
